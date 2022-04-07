@@ -19,7 +19,6 @@ body {
     overflow: hidden;
     .slid1 {
       background-image: url("../img/slid1.jpg");
-      width: 980px;
       height: 700px;
       background-repeat: no-repeat;
       background-size: cover;
@@ -44,6 +43,30 @@ body {
     &:hover {
       color: #9c9c9c;
     }
+  }
+  .sub {
+    &__list {
+      padding-left: 0;
+      display: none;
+    }
+    &__item {
+      list-style-type: none;
+      padding-top: 15px;
+      &:hover > ul{
+        display: block;
+      }
+    }
+    &__link {
+      text-decoration: none;
+      font-size: 15px;
+      color: #1c1c1c;
+      &:hover {
+        color: #9c9c9c;
+      }
+    }
+  }
+  li:hover > ul {
+    display: block;
   }
 }
 footer {

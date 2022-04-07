@@ -22,7 +22,6 @@ body {
 }
 .menu__slider .slid1 {
   background-image: url("../img/slid1.jpg");
-  width: 980px;
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,6 +44,28 @@ body {
 }
 .menu__link:hover {
   color: #9c9c9c;
+}
+.menu .sub__list {
+  padding-left: 0;
+  display: none;
+}
+.menu .sub__item {
+  list-style-type: none;
+  padding-top: 15px;
+}
+.menu .sub__item:hover > ul {
+  display: block;
+}
+.menu .sub__link {
+  text-decoration: none;
+  font-size: 15px;
+  color: #1c1c1c;
+}
+.menu .sub__link:hover {
+  color: #9c9c9c;
+}
+.menu li:hover > ul {
+  display: block;
 }
 
 footer {
