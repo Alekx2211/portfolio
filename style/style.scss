@@ -91,3 +91,16 @@ footer {
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
 }
+.foto {
+  margin: 0 auto;
+  &__my{
+   width: 700px;
+    height: 450px;
+    margin: 0 auto;
+    }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

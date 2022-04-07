@@ -6,11 +6,58 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/b39de798ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-<?php require($_SERVER[DOCUMENT_ROOT].'/php/menu.php');?>
+<div class="menu">
+    <div class="menu__bar">
+        <a class="menu__logo" href="index.html"><img src="img/logp.png" alt=""></a>
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link active" href="index.html">Фотограф Сидорова Алена</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Портфолио</a>
+                    <ul class="sub__list">
+                        <li class="sub__item"><a class="sub__link" href="">Фотосессия лошадей</a></li>
+                        <li class="sub__item"><a class="sub__link" href="">Фотосессия собак</a></li>
+                        <li class="sub__item"><a class="sub__link" href="">Фотосессия людей с лошадьми</a></li>
+                        <li class="sub__item"><a class="sub__link" href="">Фотосессия людей с собаками</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="">Стоимость услуг</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Контактная информация</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="foto">
+        <h2>Обо мне</h2>
+        <p>Меня зовут Сидорова Алена и я начинающий конный и собачий фотограф . Работаю в Санкт-Петербурге. <br>
+            Фотография для меня — не просто работа, это моя жизнь, моя страсть, мой смысл!</p>
+        <div class="foto__my">
+            <img src="img/slid1.jpeg" alt="">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <div class="text">
+            <h2>Family & Horse Photo</h2>
+            <h1>Сидорова Алена</h1>
+            <p>+7 (921) 999-17-92 вы можете написать мне в WhatsApp</p>
+            <span>Политика конфиденциальности</span>
+        </div>
+        <div class="soc">
+            <div class="soc__icon">
+                <a href="https://vk.com/baksarphoto"><img src="img/vk.png" alt=""></a>
+                <a href=""><img src="img/instagram.png" alt=""></a>
+            </div>
+            <img src="img/logo2.png" alt="">
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
