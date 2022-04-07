@@ -135,6 +135,7 @@ footer {
   border-bottom: 1px solid;
   width: 100%;
   height: 70px;
+  outline: none;
 }
 
 textarea {
@@ -143,6 +144,21 @@ textarea {
   border: none;
   border-bottom: 1px solid;
   padding-top: 30px;
+  outline: none;
+}
+
+.cont {
+  display: flex;
+  margin-top: 40px;
+}
+.cont__set {
+  margin: 0 auto;
+}
+.cont__set a {
+  padding-left: 20px;
+}
+.cont__tel {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -126,6 +126,7 @@ footer {
       border-bottom: 1px solid;
       width: 100%;
       height: 70px;
+      outline: none;
     }
   }
 }
@@ -135,4 +136,18 @@ textarea {
   border: none;
   border-bottom: 1px solid;
   padding-top: 30px;
+  outline: none;
+}
+.cont {
+  display: flex;
+  margin-top: 40px;
+  &__set {
+   margin: 0 auto;
+    a {
+      padding-left: 20px;
+    }
+  }
+  &__tel {
+    width: 50%;
+  }
 }
