@@ -121,10 +121,11 @@ footer {
 .Contact h2, .Contact p {
   font-family: "Roboto Slab";
 }
-
-.form {
-  display: inline-flex;
+.Contact .wrap {
+  width: 1500px;
+  margin: 0 auto;
 }
+
 .form form {
   display: flex;
   flex-direction: column;
@@ -133,7 +134,7 @@ footer {
 .form form input {
   border: none;
   border-bottom: 1px solid;
-  width: 100%;
+  width: 700px;
   height: 70px;
   outline: none;
 }
@@ -152,17 +153,15 @@ footer {
   transition: 1s;
   cursor: pointer;
 }
-
-textarea {
-  width: 420px;
+.form textarea {
+  width: 700px;
   height: 195px;
-  margin-left: 0px;
   border: none;
   border-bottom: 1px solid;
-  padding-top: 22px;
+  padding-top: 21px;
   outline: none;
   position: absolute;
-  right: 0;
+  right: 73px;
 }
 
 .cont {

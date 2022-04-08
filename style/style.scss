@@ -114,9 +114,12 @@ footer {
   h2,p {
     font-family: "Roboto Slab";
   }
+  .wrap {
+    width: 1500px;
+    margin: 0 auto;
+  }
 }
 .form {
-  display: inline-flex;
   form {
     display: flex;
     flex-direction: column;
@@ -124,7 +127,7 @@ footer {
     input {
       border: none;
       border-bottom: 1px solid;
-      width: 100%;
+      width: 700px;
       height: 70px;
       outline: none;
     }
@@ -144,18 +147,18 @@ footer {
       }
     }
   }
+  textarea {
+    width: 700px;
+    height: 195px;
+    border: none;
+    border-bottom: 1px solid;
+    padding-top: 21px;
+    outline: none;
+    position: absolute;
+    right: 73px;
+  }
 }
-textarea {
-  width: 420px;
-  height: 195px;
-  margin-left: 0px;
-  border: none;
-  border-bottom: 1px solid;
-  padding-top: 22px;
-  outline: none;
-  position: absolute;
-  right: 0;
-}
+
 .cont {
   display: flex;
   margin-top: 40px;
