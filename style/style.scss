@@ -4,6 +4,9 @@ body {
 }
 .menu {
   display: flex;
+  &__top {
+    display: none;
+  }
   &__bar {
     width: 300px;
     background-color: #efecec;
@@ -164,11 +167,58 @@ footer {
   margin-top: 40px;
   &__set {
    margin: 0 auto;
+    text-align: center;
     a {
       padding-left: 20px;
     }
   }
   &__tel {
     width: 50%;
+  }
+}
+@media  (max-width: 2700px) {
+  .menu__bar {
+    display: block;
+  }
+  .Contact {
+    overflow: hidden;
+    .wrap {
+      width: 900px;
+      margin: 0 auto;
+    }
+    form {
+      width: 100%;
+      input {
+        width: 40%;
+      }
+      textarea {
+        width: 35%;
+        position: absolute;
+      }
+    }
+  }
+}
+@media  (min-width:300px) {
+  .menu__bar {
+    display: none;
+  }
+  .menu__top {
+    display: block;
+  }
+  .Contact {
+    margin: 20px;
+    padding: 0;
+    form {
+      input {
+        width: 100%;
+      }
+      textarea {
+        position: inherit;
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    margin-left: 0;
   }
 }
