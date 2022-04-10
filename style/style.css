@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -182,16 +183,95 @@ footer {
   width: 50%;
 }
 
-@media (max-width: 2700px) {
+@media (min-width: 300px) {
+  .menu {
+    display: block;
+  }
+
+  .menu__bar {
+    display: none;
+  }
+
+  .menu__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efecec;
+  }
+  .menu__top .menu-burger__header {
+    position: relative;
+    /* задаем относительное позиционирование */
+    width: 40px;
+    /* определяем размеры блока */
+    height: 35px;
+    display: block;
+    margin-left: 10px;
+  }
+
+  .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+  }
+
+  .menu-burger__header span {
+    top: 16px;
+  }
+
+  .menu-burger__header:after, .menu-burger__header:before {
+    content: "";
+  }
+
+  .menu-burger__header:after {
+    bottom: 5px;
+  }
+
+  .menu-burger__header:before {
+    top: 5px;
+  }
+
+  .Contact {
+    margin-left: 0;
+    padding: 0 20px 0 20px;
+  }
+  .Contact form {
+    width: 100%;
+  }
+  .Contact form input {
+    width: 100%;
+  }
+  .Contact form textarea {
+    position: inherit;
+    width: 100%;
+  }
+  .Contact .form {
+    width: 100%;
+  }
+  .Contact .wrap {
+    width: 100%;
+  }
+
+  footer {
+    margin-left: 0;
+  }
+}
+@media (min-width: 926px) {
   .menu__bar {
     display: block;
   }
 
+  .menu__top {
+    display: none;
+  }
+
   .Contact {
     overflow: hidden;
+    margin-left: 300px;
   }
   .Contact .wrap {
-    width: 900px;
+    width: auto;
     margin: 0 auto;
   }
   .Contact form {
@@ -204,30 +284,9 @@ footer {
     width: 35%;
     position: absolute;
   }
-}
-@media (min-width: 300px) {
-  .menu__bar {
-    display: none;
-  }
-
-  .menu__top {
-    display: block;
-  }
-
-  .Contact {
-    margin: 20px;
-    padding: 0;
-  }
-  .Contact form input {
-    width: 100%;
-  }
-  .Contact form textarea {
-    position: inherit;
-    width: 100%;
-  }
 
   footer {
-    margin-left: 0;
+    margin-left: 300px;
   }
 }
 
