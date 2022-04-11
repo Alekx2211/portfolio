@@ -24,13 +24,13 @@ body {
       background-image: url("../img/slid2.jpg");
       height: 700px;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
     }
     .slid2 {
       background-image: url("../img/slid1.jpeg");
       height: 700px;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
     }
   }
   &__logo {
@@ -264,6 +264,7 @@ footer {
   }
   .menu__slider {
     margin-left: 300px;
+    width: 1000px;
   }
   .Contact {
     overflow: hidden;
@@ -282,6 +283,9 @@ footer {
         position: absolute;
       }
     }
+  }
+  .slid2 {
+    width: 100%;
   }
   footer {
     margin-left: 300px;
