@@ -5,7 +5,6 @@
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: true,
-        adaptiveWidth: true
     });
 
 $("#nextContents").click(function(){
