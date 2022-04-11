@@ -20,15 +20,21 @@ body {
   margin-top: 100px;
 }
 .menu__slider {
-  width: 100%;
+  width: 1200px;
   margin-left: 300px;
   overflow: hidden;
 }
 .menu__slider .slid1 {
-  background-image: url("../img/slid1.jpg");
+  background-image: url("../img/slid2.jpg");
   height: 700px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+.menu__slider .slid2 {
+  background-image: url("../img/slid1.jpeg");
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .menu__logo {
   margin-left: 30px;
@@ -270,6 +276,10 @@ footer {
     display: none;
   }
 
+  .menu__slider {
+    margin-left: 300px;
+  }
+
   .Contact {
     overflow: hidden;
     margin-left: 300px;
@@ -292,6 +302,39 @@ footer {
   footer {
     margin-left: 300px;
   }
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  bottom: 85px;
+  left: 150px;
+}
+.slick-dots > li {
+  margin: 0;
+}
+.slick-dots > li > button {
+  text-indent: -9999px;
+  width: 8px;
+  height: 8px;
+  border: none;
+  background-color: #d2527f;
+  border-radius: 100%;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  padding: 7px;
+  margin: 0 10px;
+}
+.slick-dots > li > button:focus {
+  outline: none;
+}
+.slick-dots > li.slick-active > button {
+  background-color: #78b649;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
 }
 
 /*# sourceMappingURL=style.css.map */
