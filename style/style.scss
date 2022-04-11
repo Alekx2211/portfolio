@@ -253,6 +253,9 @@ footer {
   width: 100%;
 }
 @media  (min-width: 926px) {
+  .menu {
+    display: flex;
+  }
   .menu__bar {
     display: block;
   }
