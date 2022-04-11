@@ -193,12 +193,10 @@ footer {
   .menu {
     display: block;
   }
-  .menu__slider {
-    width: 100%;
-  }
 
   .menu__slider {
     margin-left: 0;
+    width: 100%;
   }
 
   .menu__bar {
