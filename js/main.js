@@ -1,5 +1,4 @@
-
-    $('.menu__slider').slick({
+$('.menu__slider').slick({
         dots: true,
         infinite: true,
         speed: 300,
