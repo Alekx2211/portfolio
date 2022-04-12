@@ -21,17 +21,31 @@ body {
     margin-left: 300px;
     overflow: hidden;
     .slid1, {
-      background-image: url("../img/slid2.jpg");
-      height: 700px;
+      background-image: url("../img/i2.jpg");
+      height: 1600px;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
     .slid2 {
-      background-image: url("../img/slid1.jpeg");
-      height: 700px;
+      background-image: url("../img/i5.jpg");
+      height: 1600px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .slid3 {
+      background-image: url("../img/i4.jpg");
+      height: 1660px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .slid4 {
+      background-image: url("../img/i8.jpg");
+      height: 1600px;
       background-repeat: no-repeat;
       background-size: cover;
     }
+
   }
   &__logo {
     margin-left: 30px;

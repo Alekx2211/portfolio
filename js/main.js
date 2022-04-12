@@ -4,7 +4,7 @@ $('.menu__slider').slick({
         speed: 500,
         slidesToShow: 1,
         fade: true,
-        cssEase: 'linear'
+        adaptiveHeight: true,
     });
 
 $("#nextContents").click(function(){
