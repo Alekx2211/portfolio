@@ -1,4 +1,4 @@
-
+@charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list
 {
@@ -66,11 +66,12 @@
 .slick-prev:before,
 .slick-next:before
 {
+    font-family: 'slick';
     font-size: 20px;
     line-height: 1;
 
     opacity: .75;
-    color: #9c1c28;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -78,11 +79,11 @@
 
 .slick-prev
 {
-    left: -50px;
+    left: -25px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -50px;
+    right: -25px;
     left: auto;
 }
 .slick-prev:before
@@ -96,7 +97,7 @@
 
 .slick-next
 {
-    right: -50px;
+    right: -25px;
 }
 [dir='rtl'] .slick-next
 {
@@ -121,13 +122,17 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 7px;
+    bottom: -25px;
+
     display: block;
+
     width: 100%;
     padding: 0;
     margin: 0;
+
     list-style: none;
 
+    text-align: center;
 }
 .slick-dots li
 {
@@ -149,8 +154,8 @@
 
     display: block;
 
-    width: 8px;
-    height: 8px;
+    width: 20px;
+    height: 20px;
     padding: 5px;
 
     cursor: pointer;
@@ -158,7 +163,7 @@
     color: transparent;
     border: 0;
     outline: none;
-    background-color: #5f3f3f;
+    background: transparent;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
