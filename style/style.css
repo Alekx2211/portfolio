@@ -1,357 +1,37 @@
-@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
-.main {
-  display: flex;
-}
-
-.menu {
-  display: flex;
-}
-.menu__top {
-  display: none;
-}
-.menu__bar {
-  width: 300px;
-  background-color: #efecec;
-  position: fixed;
-  height: 100%;
-}
-.menu__nav {
-  margin-top: 100px;
-}
-.menu__logo {
-  margin-left: 30px;
-}
-.menu__item {
-  list-style-type: none;
-  margin-top: 15px;
-}
-.menu__link {
-  text-decoration: none;
-  color: #1c1c1c;
-  font-size: 15px;
-  font-family: "Lora", serif;
-}
-.menu__link a.active {
-  color: #fc5a61;
-}
-.menu__link:hover {
-  color: #9c9c9c;
-}
-.menu .sub__list {
-  padding-left: 0;
-  display: none;
-}
-.menu .sub__item {
-  list-style-type: none;
-  padding-top: 15px;
-}
-.menu .sub__item:hover > ul {
-  display: block;
-}
-.menu .sub__link {
-  text-decoration: none;
-  font-size: 15px;
-  color: #1c1c1c;
-}
-.menu .sub__link:hover {
-  color: #9c9c9c;
-}
-.menu li:hover > ul {
-  display: block;
-}
-
-.slider {
-  width: 100%;
-  margin-left: 300px;
-  overflow: hidden;
-}
-.slider .slid1 {
-  background-image: url("../img/sub3.jpeg");
-  height: 1160px;
-  background-repeat: no-repeat;
-  background-size: contain;
+.header {
+  background-image: url("../img/slosadmi/foto9.jpg");
+  height: 766px;
+  background-size: cover;
+  background-position-y: 50%;
 }
 
 footer {
   margin-left: 300px;
+  height: 300px;
 }
-
-.footer {
+footer .footer {
   display: flex;
   justify-content: space-between;
 }
-
-.text {
+footer .footer .text {
   margin-left: 50px;
   font-size: 15px;
   font-family: "Roboto Slab", serif;
   margin-top: 100px;
 }
-
-.soc {
+footer .footer .soc {
   margin-top: 100px;
   text-align: center;
   flex-basis: 50%;
-}
-
-.fa-brands {
-  font-family: "Font Awesome 6 Brands";
-  font-weight: 400;
-}
-
-.foto {
-  margin: 0 auto;
-}
-.foto__my {
-  width: 700px;
-  height: 450px;
-  margin: 0 auto;
-}
-.foto img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  margin-left: 300px;
-  width: 100%;
-}
-
-.Contact {
-  margin-left: 300px;
-  padding-left: 50px;
-}
-.Contact h2, .Contact p {
-  font-family: "Roboto Slab";
-}
-.Contact .wrap {
-  width: 1500px;
-  margin: 0 auto;
-}
-
-.form form {
-  display: flex;
-  flex-direction: column;
-  width: 420px;
-}
-.form form input {
-  border: none;
-  border-bottom: 1px solid;
-  width: 700px;
-  height: 70px;
-  outline: none;
-}
-.form form .btn {
-  border: none;
-  width: 144px;
-  height: 50px;
-  background-color: black;
-  color: #fff;
-  margin-top: 50px;
-}
-.form form .btn:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid;
-  transition: 1s;
-  cursor: pointer;
-}
-.form textarea {
-  width: 700px;
-  height: 195px;
-  border: none;
-  border-bottom: 1px solid;
-  padding-top: 21px;
-  outline: none;
-  position: absolute;
-  right: 73px;
-}
-
-.cont {
-  display: flex;
-  margin-top: 40px;
-}
-.cont__set {
-  margin: 0 auto;
-  text-align: center;
-}
-.cont__set a {
-  padding-left: 20px;
-}
-.cont__tel {
-  width: 50%;
-}
-
-@media (min-width: 300px) {
-  .menu {
-    display: block;
-  }
-
-  .slider {
-    margin-left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .slider .slid1 {
-    height: 300px;
-  }
-
-  .menu__bar {
-    display: none;
-  }
-
-  .menu__top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #efecec;
-  }
-  .menu__top .menu-burger__header {
-    position: relative;
-    /* задаем относительное позиционирование */
-    width: 40px;
-    /* определяем размеры блока */
-    height: 35px;
-    display: block;
-    margin-left: 10px;
-  }
-
-  .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before {
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    background: #515758;
-    margin: 0 auto;
-  }
-
-  .menu-burger__header span {
-    top: 16px;
-  }
-
-  .menu-burger__header:after, .menu-burger__header:before {
-    content: "";
-  }
-
-  .menu-burger__header:after {
-    bottom: 5px;
-  }
-
-  .menu-burger__header:before {
-    top: 5px;
-  }
-
-  .Contact {
-    margin-left: 0;
-    padding: 0 20px 0 20px;
-  }
-  .Contact form {
-    width: 100%;
-  }
-  .Contact form input {
-    width: 100%;
-  }
-  .Contact form textarea {
-    position: inherit;
-    width: 100%;
-  }
-  .Contact .form {
-    width: 100%;
-  }
-  .Contact .wrap {
-    width: 100%;
-  }
-
-  footer {
-    margin-left: 0;
-  }
-}
-.slick-dotted.slick-slider {
-  width: 100%;
-}
-
-@media (min-width: 926px) {
-  .menu {
-    display: flex;
-  }
-
-  .menu__bar {
-    display: block;
-  }
-
-  .menu__top {
-    display: none;
-  }
-
-  .menu__slider {
-    margin-left: 300px;
-    width: 1000px;
-  }
-
-  .Contact {
-    overflow: hidden;
-    margin-left: 300px;
-  }
-  .Contact .wrap {
-    width: auto;
-    margin: 0 auto;
-  }
-  .Contact form {
-    width: 100%;
-  }
-  .Contact form input {
-    width: 40%;
-  }
-  .Contact form textarea {
-    width: 35%;
-    position: absolute;
-  }
-
-  .slid2 {
-    width: 100%;
-  }
-
-  footer {
-    margin-left: 300px;
-  }
-}
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  position: relative;
-  bottom: 85px;
-  left: 150px;
-}
-.slick-dots > li {
-  margin: 0;
-}
-.slick-dots > li > button {
-  text-indent: -9999px;
-  width: 8px;
-  height: 8px;
-  border: none;
-  background-color: #d2527f;
-  border-radius: 100%;
-  line-height: 0;
-  font-size: 0;
-  cursor: pointer;
-  padding: 7px;
-  margin: 0 10px;
-}
-.slick-dots > li > button:focus {
-  outline: none;
-}
-.slick-dots > li.slick-active > button {
-  background-color: #78b649;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.31);
 }
 
 /*# sourceMappingURL=style.css.map */
