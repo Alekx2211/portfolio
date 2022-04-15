@@ -13,6 +13,26 @@ body {
   background-size: cover;
   background-position-y: 50%;
 }
+.header .wrap {
+  width: 1300px;
+  margin: 0 auto;
+}
+.header .wrap nav {
+  display: flex;
+  justify-content: space-around;
+}
+.header .wrap nav .nav {
+  display: flex;
+}
+.header .wrap nav .nav__item {
+  list-style-type: none;
+}
+.header .wrap nav .nav__item a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Roboto Slab";
+  color: #1c1c1c;
+}
 
 footer {
   margin-left: 300px;
