@@ -26,16 +26,30 @@ body {
 }
 .header .wrap nav .nav__item {
   list-style-type: none;
+  margin-right: 15px;
 }
 .header .wrap nav .nav__item a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Roboto Slab";
   color: #1c1c1c;
 }
+.header .wrap nav .nav__item a:hover {
+  color: #fc5a61;
+}
+.header .wrap nav .nav__sub {
+  display: none;
+  padding: 0;
+  position: absolute;
+}
+.header .wrap nav .nav__sub a {
+  font-size: 14px;
+}
+.header .wrap nav .nav > li:hover .nav__sub {
+  display: block;
+}
 
 footer {
-  margin-left: 300px;
   height: 300px;
 }
 footer .footer {
