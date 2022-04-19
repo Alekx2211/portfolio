@@ -8,6 +8,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.wrap {
+  width: 1300px;
+  margin: 0 auto;
+}
 .main {
   background-image: url("../img/slosadmi/foto9.jpg");
   background-size: cover;
@@ -25,13 +29,14 @@ body {
   padding-left: 0;
   margin:0;
   &__item {
-    margin-left: 25px;
+    margin-left: 35px;
   }
   &__link {
     text-decoration: none;
     color: #1c1c1c;
+    font-family: 'Roboto Slab', serif;
     &:hover {
-      color: #59ba88;
+      color: #ffffff;
     }
   }
 }
@@ -44,31 +49,55 @@ body {
     text-decoration: none;
     color: #1c1c1c;
     &:hover{
-      color: #59ba88;
+      color: #ffffff;
     }
   }
 }
 .nav>li:hover .sub {
   display: block;
 }
-footer {
-  height: 300px;
+.about {
+  margin-bottom: 30px;
+  &__text {
+    margin: 0 auto;
+    width: 1000px;
+    font-family: 'Roboto Slab',Serif;
+  }
+}
+.photo {
+  display: flex;
+  justify-content: space-evenly;
+  &__ser {
+    background-image: url("../img/ser.jpeg");
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+  }
+  &__foto {
+    background-image: url("../img/i6.jpg");
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+  }
+}
+
   .footer {
+    height: 300px;
+    background-color: #EFECEC;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .text {
-      margin-left: 50px;
+      text-align: center;
       font-size: 15px;
       font-family: 'Roboto Slab', serif;
-      margin-top: 100px;
+      flex-basis: 50%;
     }
     .soc {
-      margin-top: 100px;
       text-align: center;
       flex-basis: 50%;
     }
   }
-}
 
 
 

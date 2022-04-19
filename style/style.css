@@ -11,6 +11,11 @@ body {
   padding: 0;
 }
 
+.wrap {
+  width: 1300px;
+  margin: 0 auto;
+}
+
 .main {
   background-image: url("../img/slosadmi/foto9.jpg");
   background-size: cover;
@@ -31,14 +36,15 @@ body {
   margin: 0;
 }
 .nav__item {
-  margin-left: 25px;
+  margin-left: 35px;
 }
 .nav__link {
   text-decoration: none;
   color: #1c1c1c;
+  font-family: "Roboto Slab", serif;
 }
 .nav__link:hover {
-  color: #59ba88;
+  color: #ffffff;
 }
 
 .sub {
@@ -52,28 +58,53 @@ body {
   color: #1c1c1c;
 }
 .sub__link:hover {
-  color: #59ba88;
+  color: #ffffff;
 }
 
 .nav > li:hover .sub {
   display: block;
 }
 
-footer {
-  height: 300px;
+.about {
+  margin-bottom: 30px;
 }
-footer .footer {
+.about__text {
+  margin: 0 auto;
+  width: 1000px;
+  font-family: "Roboto Slab", Serif;
+}
+
+.photo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.photo__ser {
+  background-image: url("../img/ser.jpeg");
+  width: 400px;
+  height: 600px;
+  background-size: cover;
+}
+.photo__foto {
+  background-image: url("../img/i6.jpg");
+  width: 400px;
+  height: 600px;
+  background-size: cover;
+}
+
+.footer {
+  height: 300px;
+  background-color: #EFECEC;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-footer .footer .text {
-  margin-left: 50px;
+.footer .text {
+  text-align: center;
   font-size: 15px;
   font-family: "Roboto Slab", serif;
-  margin-top: 100px;
+  flex-basis: 50%;
 }
-footer .footer .soc {
-  margin-top: 100px;
+.footer .soc {
   text-align: center;
   flex-basis: 50%;
 }
