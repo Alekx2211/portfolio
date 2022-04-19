@@ -2,50 +2,60 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
-.header {
+.main {
   background-image: url("../img/slosadmi/foto9.jpg");
-  height: 766px;
   background-size: cover;
   background-position-y: 50%;
+  height: 100%;
 }
-.header .wrap {
-  width: 1300px;
-  margin: 0 auto;
-}
-.header .wrap nav {
+
+.header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-.header .wrap nav .nav {
+
+.nav {
   display: flex;
-}
-.header .wrap nav .nav__item {
   list-style-type: none;
-  margin-right: 15px;
+  padding-left: 0;
+  margin: 0;
 }
-.header .wrap nav .nav__item a {
+.nav__item {
+  margin-left: 25px;
+}
+.nav__link {
   text-decoration: none;
-  font-size: 20px;
-  font-family: "Roboto Slab";
   color: #1c1c1c;
 }
-.header .wrap nav .nav__item a:hover {
-  color: #fc5a61;
+.nav__link:hover {
+  color: #59ba88;
 }
-.header .wrap nav .nav__sub {
+
+.sub {
+  list-style-type: none;
   display: none;
-  padding: 0;
   position: absolute;
+  padding: 0;
 }
-.header .wrap nav .nav__sub a {
-  font-size: 14px;
+.sub__link {
+  text-decoration: none;
+  color: #1c1c1c;
 }
-.header .wrap nav .nav > li:hover .nav__sub {
+.sub__link:hover {
+  color: #59ba88;
+}
+
+.nav > li:hover .sub {
   display: block;
 }
 
