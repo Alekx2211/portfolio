@@ -7,6 +7,7 @@ html , body{
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Slab', serif;
 }
 .wrap {
   width: 1300px;
@@ -61,7 +62,7 @@ body {
   &__text {
     margin: 0 auto;
     width: 1000px;
-    font-family: 'Roboto Slab',Serif;
+    font-family: 'Roboto Slab', serif;
   }
 }
 .photo {
@@ -86,10 +87,11 @@ body {
 .Contacts {
   &__foto {
     background-image: url("../img/slosadmi/foto1.jpg");
-    width: 826px;
-    height: 590px;
-    background-size: contain;
+    width: 1150px;
+    height: 640px;
+    background-size: cover;
     margin: 0 auto;
+    background-position-y: bottom;
   }
 }
 .section-form {
@@ -100,7 +102,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 550px;
-  margin: 0 auto;
   &__input, &__textarea {
     border: none;
     border-bottom: 1px solid;
@@ -123,7 +124,33 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-
+.section-portfolio1 {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  text-align: center;
+}
+.portfolio {
+  display: flex;
+  flex-flow:  wrap;
+  justify-content: space-evenly;
+  div {
+    width: 400px;
+    height: 600px;
+    margin-bottom: 20px;
+  }
+  .photo1 {
+    background-image: url("../img/slosadmi/foto11.jpg");
+    background-size: cover;
+  }
+  .photo2 {
+    background-image: url("../img/slosadmi/foto8.jpg");
+    background-size: cover;
+  }
+  .photo3 {
+    background-image: url("../img/slosadmi/foto5.jpg");
+    background-size: cover;
+  }
+}
 
   .footer {
     height: 300px;
