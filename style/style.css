@@ -406,6 +406,10 @@ body {
   .photo__ser {
     display: none;
   }
+
+  .sub {
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
