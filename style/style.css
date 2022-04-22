@@ -402,6 +402,10 @@ body {
     display: block;
     padding-top: 50px;
   }
+
+  .photo__ser {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
