@@ -31,7 +31,6 @@
                     </li>
                     <li class="nav__item"><a class="nav__link" href="">Услуги</a></li>
                     <li class="nav__item"><a class="nav__link" href="contakt.html">Контакты</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
                 </ul>
             </nav>
         </div>
@@ -73,13 +72,18 @@
                 <p>+7 921 999-17-92</p>
                 <p>Я хочу запечатлеть красоту мгновений Вашей жизни, Вашу улыбку</p>
             </div>
-            <form action="./php/mail.php" class="form" method="post">
-                <input class="form__input" type="text" placeholder="Имя*">
-                <input class="form__input" type="text" placeholder="Телефон">
-                <input class="form__input" type="email" placeholder="email*">
-                <textarea class="form__textarea" placeholder="Ваше сообщение"></textarea>
-                <button class="btn" type="submit">Отправить</button>
-            </form>
+            <div class="form-container">
+                <div class="note"></div>
+                <div class="fields">
+                    <form action="php/contact.php" class="form" method="post">
+                        <input class="form__input" name="name" type="text" placeholder="Имя*">
+                        <input class="form__input" type="tel" name="tel"  placeholder="Телефон*">
+                        <input class="form__input" type="email" name="email" placeholder="email*">
+                        <textarea class="form__textarea" name="message" placeholder="Ваше сообщение"></textarea>
+                        <input type="submit" name="submit" class="form-container__btn btn" value="Отправить">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -101,5 +105,6 @@
 </footer>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/sidebar.js"></script>
+<script src="js/contactform.js"></script>
 </body>
 </html>

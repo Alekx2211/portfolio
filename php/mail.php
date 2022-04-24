@@ -21,17 +21,17 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты/
-   //  $mail->Username   = 'sidorovaaliena@gmail.com'; // Логин на почте
-   //  $mail->Password   = 'hwysonxhpotbacdy'; // Пароль приложения
-    $mail->Username   = 'matvei7berezin@gmail.com'; // Логин на почте
-    $mail->Password   = 'xkomfqdbefyuuqgm'; // Пароль приложения
+   //  $mail->Username   = 'dizel2012@gmail.com'; // Логин на почте
+   //  $mail->Password   = 'nczuchahokeefndw'; // Пароль приложения
+    $mail->Username   = 'dizel2012@gmail.com'; // Логин на почте
+    $mail->Password   = 'nczuchahokeefndw'; // Пароль приложения
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
    //  $mail->setFrom('sidorovaaliena@gmail.com', 'Письмо от визитки'); // Адрес самой почты и имя отправителя
-    $mail->setFrom('matvei7berezin@gmail.com', 'Письмо от визитки'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('dizel2012@gmail.com', 'Письмо от визитки'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('alena.sidorova.80@internet.ru');
+    $mail->addAddress('dizel@bk.ru');
    //  $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
 // Отправка сообщения
