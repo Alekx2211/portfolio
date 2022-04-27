@@ -16,21 +16,21 @@ body {
   width: 1300px;
   margin: 0 auto;
 }
-
 .main {
-  background-image: url("../img/slosadmi/foto9.jpg");
+
   background-size: cover;
-  background-position-y: 50%;
   height: 100%;
 }
-
 .header {
   display: flex;
+  background-color: #efecec6b;
+  position: fixed;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
   width: 100%;
 }
+
+
 
 .nav {
   display: flex;
@@ -403,7 +403,7 @@ body {
   }
 
   #main-slider,
-.Contact {
+  .Contact {
     width: 100vw;
   }
 
@@ -429,5 +429,3 @@ body {
     position: relative;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
