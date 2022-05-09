@@ -160,6 +160,18 @@ section {
     background-size: cover;
   }
 }
+.horse-text {
+  display: flex;
+  justify-content: space-around;
+  line-height: 1.5;
+}
+.text-top {
+  font-family: 'Bebas Neue', cursiv;
+  font-size: 23px;
+  margin-top: 41px;
+  margin-bottom: 10px;
+
+}
 
   .footer {
     height: 300px;
@@ -178,12 +190,40 @@ section {
       flex-basis: 50%;
     }
   }
+  .s-you-horse {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   .foto-horse {
     width: 1200px;
     height: 798px;
     background-image: url("../img/klub.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-position-y: -430px;
+    margin-left: 50px;
+  }
+.foto-you-horse {
+  width: 1200px;
+  height: 798px;
+  background-image: url("../img/you.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 50px;
+}
+.foto-pets {
+  width: 1200px;
+  height: 798px;
+  background-image: url("../img/pets.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 50px;
+}
+  .title {
+    text-align: center;
+    font-family: 'Bebas Neue', cursiv;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 1300px) {
