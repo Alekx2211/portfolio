@@ -24,6 +24,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  background-color: #EFECEC;
 }
 .nav {
   display: flex;
@@ -102,8 +103,8 @@ body {
     background-position-y: bottom;
   }
 }
-.section-form {
-  padding-top: 122px;
+section {
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 .form {
@@ -176,6 +177,13 @@ body {
       text-align: center;
       flex-basis: 50%;
     }
+  }
+  .foto-horse {
+    width: 1200px;
+    height: 798px;
+    background-image: url("../img/klub.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (max-width: 1300px) {
@@ -294,6 +302,7 @@ body {
     justify-content: space-between;
     width: 100%;
     position: fixed;
+    background-color: #EFECEC;
   }
   .nav {
     display: block;
