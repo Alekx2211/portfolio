@@ -1,5 +1,5 @@
 <?php
-/*Template Name: С лошадьми*/
+/*Template Name: Услуги*/
 get_header()
 ?>
 <section class="section-uslugi">
