@@ -1,11 +1,23 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('bebasneueregular.woff2') format('woff2'), url('bebasneueregular.woff') format('woff'), url('bebasneueregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Adventure";
+  font-style: normal;
+  font-weight: 400;
+}
 html , body{
   height: 100%;
 }
-h1 p {
+h1, p {
   margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
@@ -17,17 +29,31 @@ body {
   margin: 0 auto;
 }
 .main {
-  background-image: url("../img/foto76.jpg");
+  background-image: url("../img/obl.jpg");
   background-size: cover;
-  background-position-y: 50%;
   height: 100%;
+  background-position-y: 45%;
+
+  .text1{
+    width: 777px;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    bottom: -34px;
+    right: 30px;
+    position: absolute;
+    color: #dd1919;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.11);
+    font-family: "Adventure";
+  }
 }
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: #EFECEC;
+  background-color: #58788c8c;
+
 }
 .nav {
   display: flex;
@@ -39,8 +65,10 @@ body {
   }
   &__link {
     text-decoration: none;
-    color: #1c1c1c;
-    font-family: 'Roboto Slab', serif;
+    color: #86FF29;
+    font-family: 'Bebas Neue';
+    font-size: 22px;
+    font-weight: bold;
     &:hover {
       color: #0057C9;
     }
@@ -146,8 +174,6 @@ section {
   flex-flow:  wrap;
   justify-content: space-evenly;
   div {
-    width: 400px;
-    height: 600px;
     margin-bottom: 20px;
   }
   .photo1 {
@@ -178,7 +204,7 @@ section {
 
   .footer {
     height: 300px;
-    background-color: #EFECEC;
+    background-color: #58788c8c;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,7 +230,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: -430px;
-    margin-left: 50px;
+    margin: 0 auto;
   }
 .foto-you-horse {
   width: 1200px;
@@ -212,7 +238,7 @@ section {
   background-image: url("../img/you.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 50px;
+  margin: 0 auto;
 }
 .foto-pets {
   width: 1200px;
@@ -220,13 +246,25 @@ section {
   background-image: url("../img/pets.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 50px;
+  margin: 0 auto;
 }
   .title {
     text-align: center;
     font-family: 'Bebas Neue', cursiv;
     font-size: 30px;
     margin-bottom: 20px;
+  }
+  .important {
+    width: 490px;
+    padding-left: 20px;
+    .vazhno {
+      font-size: 18px;
+      color: #ff3448;
+    }
+    .imort {
+      width: 400px;
+      position: absolute;
+    }
   }
 
   @media (max-width: 1300px) {
@@ -249,7 +287,7 @@ section {
     height: 100%;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .wrap {
     width:  100%
   }
@@ -344,7 +382,6 @@ section {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    position: fixed;
     background-color: #EFECEC;
   }
   .nav {
@@ -356,6 +393,31 @@ section {
   }
   .sub {
     position: relative;
+  }
+.foto-horse {
+  width: 360px;
+  height: 360px;
+  background-size: cover;
+  background-position-y: 0;
+}
+  .foto-pets {
+    width: 360px;
+    height: 360px;
+    background-size: cover;
+    background-position-y: 0;
+  }
+  .foto-you-horse {
+    width: 360px;
+    height: 360px;
+    background-size: cover;
+    background-position-y: 0;
+  }
+  .important{
+    width: 100%;
+    .imort {
+      width: 300px;
+      position: relative;
+    }
   }
 }
 
