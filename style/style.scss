@@ -8,10 +8,14 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Adventure";
-  src: local('Adventure'), local('Adventure'), url('Adventure.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Newton";
+  src: local('Newton'), local('Newton'), url('Newton.ttf') format('truetype');
+  font-style: italic;
+}
+@font-face {
+  font-family: "Caslon";
+  src: local('Caslon'), local('Caslon'), url('Caslon.ttf') format('truetype');
+  font-style: italic;
 }
 html , body{
   height: 100%;
@@ -45,7 +49,7 @@ body {
     color: #FFFFFF;
     text-align: center;
     background: rgba(255, 255, 255, 0.11);
-    font-family: "Adventure";
+    font-family: "Caslon";
   }
 }
 .header {
