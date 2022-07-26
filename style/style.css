@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: "Adventure";
-  src: local("Adventure Regular");
+  src: local("Adventure"), local("Adventure"), url("Adventure.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
