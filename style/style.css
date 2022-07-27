@@ -45,7 +45,9 @@ body {
   background-position-y: 45%;
 }
 .main .text1 {
-  width: 620px;
+  width: 481px;
+  height: 210px;
+  padding: 15px 0;
   backdrop-filter: blur(5px);
   border-radius: 30px;
   bottom: -34px;
@@ -96,7 +98,9 @@ body {
 }
 .sub__link {
   text-decoration: none;
-  color: #1c1c1c;
+  color: #EDFFFB;
+  font-family: "Bebas Neue";
+  font-size: 20px;
 }
 .sub__link:hover {
   color: #0057C9;
